@@ -1,0 +1,19 @@
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Database
+db.sqlite3
+
+# Django secret files
+.env
+
+# Editor/OS junk
+.vscode/
+.idea/
+*.log
