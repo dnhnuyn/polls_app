@@ -14,7 +14,7 @@ from pathlib import Path
 import dj_database_url
 import os
 
-SECRET_KEY = os.environ.get("SECRET_KEY", "giá-trị-cũ-của-bạn-để-chạy-local")
+SECRET_KEY = os.environ.get("SECRET_KEY", "django-insecure-=1nafzgm4n4(#p4%c+ug80uofdpkqedh-^un=vcml+_b(#)c#l")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
