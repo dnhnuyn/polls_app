@@ -25,9 +25,12 @@ A web application for creating polls and letting users vote on them, built with 
 
 ## Screenshots
 
-<!-- Add a screenshot or two here once available, e.g.: -->
-<!-- ![Polls list page](screenshots/polls-list.png) -->
-<!-- ![Admin dashboard](screenshots/admin-dashboard.png) -->
+Add a screenshot or two here once available, e.g.:
+
+![Polls list page](screenshots/polls-list.png)
+![Admin dashboard](screenshots/admin-dashboard.png)
+![Poll details](screenshots/polls_detail.png)
+![Results](screenshots/results.png)
 
 ## Running Locally
 
