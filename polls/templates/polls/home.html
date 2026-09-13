@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polls App</title>
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
+</head>
+<body>
+    <h1>Welcome to Polls App</h1>
+    <p>A simple polling application built with Django and PostgreSQL.</p>
+    <p><a href="{% url 'polls:index' %}">View all polls →</a></p>
+</body>
+</html>
