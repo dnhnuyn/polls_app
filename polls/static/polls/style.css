@@ -1,7 +1,107 @@
-li a {
-    color: green;
+/* Reset cơ bản, tránh mỗi trình duyệt hiển thị khác nhau */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background: white url("images/background.png") no-repeat;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #f5f5f7;
+    color: #1a1a1a;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 16px;
+    color: #444;
+}
+
+/* Container chung, giới hạn chiều rộng để không bị dàn quá to trên màn hình lớn */
+.container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Danh sách câu hỏi */
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 12px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form vote */
+form {
+    margin-top: 16px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 16px;
+}
+
+label {
+    display: inline-block;
+    padding: 4px 8px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+input[type="radio"] {
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+fieldset > div,
+fieldset > p {
+    margin-bottom: 8px;
+}
+input[type="submit"] {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0052a3;
+}
+
+.errorlist {
+    color: #cc0000;
+    margin-bottom: 12px;
 }
