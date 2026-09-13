@@ -5,6 +5,7 @@
     <title>Polls</title>
 </head>
 <body>
+<div class = "container">
 {% load static %}
 
 <link rel="stylesheet" href="{% static 'polls/style.css' %}">
@@ -18,6 +19,6 @@
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
-
+</div>
 </body>
 </html>

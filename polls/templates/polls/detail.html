@@ -1,10 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <title>Polls</title>
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
 </head>
 <body>
+<div class = "container">
 <form action="{% url 'polls:vote' question.id %}" method="post">
 {% csrf_token %}
 <fieldset>
@@ -17,5 +20,6 @@
 </fieldset>
 <input type="submit" value="Vote">
 </form>
+</div>
 </body>
 </html>

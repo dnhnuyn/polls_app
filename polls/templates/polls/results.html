@@ -1,11 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <title>Polls</title>
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
 </head>
 <body>
-
+<div class = "container">
 <h1>{{ question.question_text }}</h1>
 
 <ul>
@@ -15,5 +17,6 @@
 </ul>
 
 <a href="{% url 'polls:detail' question.id %}">Vote again?</a>
+</div>
 </body>
 </html>
