@@ -17,6 +17,10 @@
 </ul>
 
 <a href="{% url 'polls:detail' question.id %}">Vote again?</a>
+<p><a href="{% url 'polls:index' %}">Back to all polls</a></p>
+{% if next_question %}
+<p><a href="{% url 'polls:detail' next_question.id %}">Vote on next poll →</a></p>
+{% endif %}
 </div>
 </body>
 </html>

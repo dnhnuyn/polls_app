@@ -18,7 +18,17 @@
         <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
     {% endfor %}
 </fieldset>
-<input type="submit" value="Vote">
+<input type="submit" value="Vote" id="vote-btn" disabled>
+<script>
+    const radios = document.querySelectorAll('input[type="radio"]');
+    const voteBtn = document.getElementById('vote-btn');
+
+    radios.forEach(function (radio) {
+        radio.addEventListener('change', function () {
+            voteBtn.disabled = false;
+        });
+    });
+</script>
 </form>
 </div>
 </body>
